@@ -114,3 +114,13 @@ ul li::before {
 .deletebtn:hover {
   background-color: #510ebd;
 }
+
+@media (max-width: 490px) {
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+  input {
+    text-align: center;
+  }
+}
