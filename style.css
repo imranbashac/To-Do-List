@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+.container-back {
+  background: linear-gradient(135deg, #3e1aa0, #3f166dde);
+  min-height: 100vh;
+  width: 100%;
+  padding: 10px;
+}
+.container {
+  margin: 2rem auto 1rem;
+  padding: 2rem 3rem 5rem;
+  background-color: #ffff;
+  width: 100%;
+  max-width: 30rem;
+  border-radius: 0.5rem;
+}
+.container h1 {
+  display: flex;
+  justify-content: center;
+  color: #41118d;
+  padding-bottom: 1rem;
+}
+h1 img {
+  height: 1.8rem;
+  padding-left: 1rem;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 2rem;
+  background-color: hsl(210, 6%, 87%);
+  margin-bottom: 1.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0.8rem;
+  font-size: 1.2rem;
+}
+#addBtn {
+  border: none;
+  outline: none;
+  padding: 1rem 2.5rem;
+  border-radius: 2rem;
+  background-color: #510ebd;
+  color: #ffff;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+#addBtn:hover {
+  background-color: #34037e;
+}
+ul li {
+  list-style: none;
+  padding: 12px 8px 12px 50px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  background-image: url(Assets/unchecked.png);
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+
+.checked::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  background-image: url(Assets/checked.png);
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+.checked {
+  text-decoration: line-through;
+}
+.deletebtn {
+  border: none;
+  outline: none;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: transparent;
+}
+.deletebtn:hover {
+  background-color: #510ebd;
+}
